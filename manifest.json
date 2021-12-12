@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "把 google 首頁旋轉",
-  "description": "旋轉180度讓你看的不清不楚",
+  "name": "show NFTs",
+  "description": "show your NFTs",
   "version": "1.0.0",
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
   },
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "images/icon.png",
     "default_popup": "popup.html"
   },
   "permissions": [
@@ -18,7 +18,9 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com.tw/*"
+        "https://www.linkedin.com/*",
+        "https://www.facebook.com/*",
+        "https://www.instagram.com/*"
       ],
       "js": [
         "execute.js"
